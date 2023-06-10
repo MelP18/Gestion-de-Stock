@@ -1,0 +1,200 @@
+*{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: black;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: 'Allura';
+    src: url(style/fonts/Allura-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Montserrat italic';
+    src: url(style/fonts/Montserrat-Italic.ttf) format(truetype);
+}
+
+ul li{
+   
+    list-style-type: none;
+}
+a, a:active a:hover{
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+}
+.formulaire {
+    /*  background-color: blue; */
+    padding: 150px 25% 0px 25%;
+    height: 100vh;
+    
+}
+
+.gestion img {
+   /*  position: absolute; */
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    position: fixed;
+    
+}
+
+.formulaire__stock {
+    width: 100%;
+    height: auto;
+    border-radius: 35px 0 0 35px;
+    justify-content: center;
+   
+}
+
+fieldset {
+    border: 2px solid rgb(101, 46, 6);
+    border-radius: 50px;
+    text-align: center;
+    background: rgba(117, 178, 244, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 30px;
+    border: 2px solid rgba(130, 7, 7, 0.18);
+}
+
+fieldset p{
+   margin-top: 15px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat italic';
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+.formulaire__content h4 {
+    margin-top: 25px;
+    font-size: 35px;
+    font-family: 'Allura';
+    margin-bottom: 15px;
+    color: rgb(6, 6, 6);
+}
+
+.formulaire__list {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.formulaire__item input {
+    width: 100%;
+    padding: 8px 0px 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 25px 0px 0px 0px;
+    border: 1px solid rgb(32, 116, 184);
+    background-color: rgb(3, 66, 107);
+    outline-color: rgb(32, 116, 184);
+    outline-offset: 6px;
+}
+
+.formulaire__item textarea {
+    width: 100%;
+    padding: 8px 0px 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 25px 0px 0px 0px;
+    border: 1px solid rgb(32, 116, 184);
+    background-color: rgb(3, 66, 107);
+    outline-color: rgb(32, 116, 184);
+    outline-offset: 6px;
+}
+
+.formulaire__list button {
+    cursor: pointer;
+    padding: 15px 25px 15px 25px;
+    border-radius: 25px ;
+    border: 1px solid rgb(32, 116, 184);
+    background-color: rgb(3, 66, 107);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: 'Montserrat italic';
+}
+
+
+.formulaire__list p.active{
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(32, 116, 184);
+    background-color: rgb(3, 66, 107);
+    border-radius: 25px 0px 0px 0px;
+    color: rgb(230, 222, 222);
+}
+.result__cont{
+   /*  display: none;  */
+}
+
+
+/* Result ***********************************************************************************************/
+
+.result h4 {
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: 'Allura';
+    margin-bottom: 15px;
+    color: rgb(6, 6, 6);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Montserrat italic';
+    font-size: 35px;
+    background: rgba(240, 235, 235, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 10px );
+    border: 2px solid rgba(130, 7, 7, 0.18);
+}
+
+th {
+    padding: 15px;
+    background-color: rgb(2, 29, 47);
+    color: white;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(165, 199, 234);
+    
+}
+
+.reponse img {
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.result button{
+    margin-top: 50px;
+    padding:15px 25px 15px 25px;
+  
+    border-radius: 25px;
+   justify-content: right;
+   background-color: white;
+}
+.result a{
+    font-family: 'Montserrat italic';
+    color: rgb(36, 163, 121) ;
+    font-weight: bold;
+}
