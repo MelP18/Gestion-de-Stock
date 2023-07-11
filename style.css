@@ -4,7 +4,7 @@
     margin: 0;
     z-index: 5;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 14px;
     color: black;
 }
 
@@ -35,40 +35,44 @@ a, a:active a:hover{
 body {
     overflow-x: hidden;
 }
-.formulaire {
-    /*  background-color: blue; */
-    padding: 150px 25% 0px 25%;
-    height: 100vh;
-    
-}
-
-.gestion img {
-   /*  position: absolute; */
+.block{
     width: 100%;
-    height:100vh;
+}
+.block img {
+    width: 100%;
+    height:100%;
     object-fit: cover;
-    position: fixed;
-    
+    position: absolute;
 }
-
-.formulaire__stock {
+.gestion{
     width: 100%;
-    height: auto;
-    border-radius: 35px 0 0 35px;
-    justify-content: center;
-   
-}
-
-fieldset {
-    border: 2px solid rgb(101, 46, 6);
-    border-radius: 50px;
-    text-align: center;
+    height: 100%;
     background: rgba(117, 178, 244, 0.3);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 10px );
-    border-radius: 30px;
-    border: 2px solid rgba(130, 7, 7, 0.18);
+    justify-content: center;
+} 
+.formulaire{
+    border-radius: 35px 0 0 35px;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    position: absolute;
+    width: 50%;
+}
+fieldset {
+    width: 100%;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    background-color: /* rgb(220, 201, 197, 1, 0.2) */ rgb(165, 199, 234); 
+    box-shadow: 0 0 5px 2px;
 }
 
 fieldset p{
@@ -82,8 +86,8 @@ fieldset p{
 
 .formulaire__content h4 {
     margin-top: 25px;
-    font-size: 35px;
-    font-family: 'Allura';
+    font-size: 25px;
+    font-family: 'Montserrat-Italic';
     margin-bottom: 15px;
     color: rgb(6, 6, 6);
 }
@@ -97,13 +101,14 @@ fieldset p{
     width: 100%;
     padding: 8px 0px 8px 10px;
     margin-bottom: 15px;
-    border-radius: 25px 0px 0px 0px;
-    border: 1px solid rgb(32, 116, 184);
-    background-color: rgb(3, 66, 107);
+    border-radius:10px ;
+    border: 1px solid rgb(32, 116, 184); 
+    background-color: transparent;
+    background-color:  rgb(1, 42, 72)  ; 
     outline-color: rgb(32, 116, 184);
     outline-offset: 6px;
 }
-
+/* 
 .formulaire__item textarea {
     width: 100%;
     padding: 8px 0px 8px 10px;
@@ -114,26 +119,25 @@ fieldset p{
     outline-color: rgb(32, 116, 184);
     outline-offset: 6px;
 }
-
+ */
 .formulaire__list button {
     cursor: pointer;
     padding: 15px 25px 15px 25px;
     border-radius: 25px ;
     border: 1px solid rgb(32, 116, 184);
-    background-color: rgb(3, 66, 107);
+    background-color:rgb(1, 42, 72);
     color: white;
     font-weight: bold;
-    margin-bottom: 25px;
     font-family: 'Montserrat italic';
 }
 
 
 .formulaire__list p.active{
     padding: 5px;
-    margin-bottom: 15px;
+    font-size: 14px;
     border: 1px solid rgb(32, 116, 184);
-    background-color: rgb(3, 66, 107);
-    border-radius: 25px 0px 0px 0px;
+    background-color: rgb(1, 42, 72);
+    border-radius:10px ;
     color: rgb(230, 222, 222);
 }
 .result__cont{
@@ -141,10 +145,9 @@ fieldset p{
 }
 
 
-/* Result ***********************************************************************************************/
-
+/*=================================++> RESULT <++======================================*/
 .result h4 {
-    padding-top: 50px;
+    padding-top: 50px; 
     font-size: 35px;
     font-family: 'Allura';
     margin-bottom: 15px;
@@ -154,7 +157,7 @@ fieldset p{
 
 table {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: 'Montserrat italic';
     font-size: 35px;
     background: rgba(240, 235, 235, 0.3);
@@ -163,38 +166,43 @@ table {
     -webkit-backdrop-filter: blur( 10px );
     border: 2px solid rgba(130, 7, 7, 0.18);
 }
-
 th {
     padding: 15px;
     background-color: rgb(2, 29, 47);
     color: white;
 }
-
-td {
+.cell{
     padding: 10px;
     text-align: center;
     font-weight: bold;
     background-color: rgb(165, 199, 234);
-    
 }
-
+.cell:last-child a{
+   padding: 5px;
+}
+/*  */
 .reponse img {
-
     position: absolute;
     width: 100%;
-    height: 100vh;
     object-fit: cover;
-}
-.result button{
+} 
+/* .result button{
     margin-top: 50px;
     padding:15px 25px 15px 25px;
-  
     border-radius: 25px;
    justify-content: right;
    background-color: white;
-}
+} 
 .result a{
     font-family: 'Montserrat italic';
     color: rgb(36, 163, 121) ;
     font-weight: bold;
+}*/
+span.mdi-pencil{
+    color: rgb(77, 75, 72);
+    font-size: 20px;
+}
+span.mdi-delete{
+    color: rgb(162, 8, 8);
+    font-size: 20px;
 }
