@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GS</title>
+</head>
+
+<body>
+    <div class="block">
+        <img src="image/grocery-1232944_1280.jpg" alt="">
+        <div class="gestion">
+            <div class="container">
+                <div class="formulaire">
+                    <form action="">
+                        <fieldset>
+                            <div class="formulaire__content">
+                                <h4>Veuillez entrer vos données</h4>
+                                <div class="formulaire__list">
+                                    <div class="formulaire__item">
+                                        <input type="text" name="produit" placeholder="Nom du produit" id="prod">
+                                    </div>
+                                    <div class="formulaire__item">
+                                        <input type="number" name="prix" placeholder="Prix unitaire" id="pu">
+                                    </div>
+                                    <div class="formulaire__item">
+                                        <input type="number" name="quant" placeholder="Quantité/Stock" id="qt">
+                                    </div>
+                                    <button id="btn__submit"> Soumettre </button>
+                                    <p id="erreur"></p>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="stock.js"></script>
+</body>
+
+</html>
